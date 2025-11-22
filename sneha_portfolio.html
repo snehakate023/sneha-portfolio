@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sneha Kate — Full‑Stack Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{margin:0;font-family:Inter,system-ui;background:#f4f6fb;color:#1a1a1a}
+    header{
+      background:linear-gradient(135deg,#6a9efc,#3b6bfa);
+      padding:80px 20px;
+      color:white;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:48px;font-weight:800}
+    header p{font-size:20px;margin-top:10px;opacity:0.9}
+    .btn-primary{
+      display:inline-block;margin-top:20px;padding:12px 24px;background:white;
+      color:#3b6bfa;border-radius:10px;text-decoration:none;font-weight:600;
+      transition:0.3s;
+    }
+    .btn-primary:hover{background:#e9eeff}
+    .section{max-width:1000px;margin:50px auto;padding:0 20px}
+    .card{
+      background:white;padding:25px;border-radius:14px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      margin-bottom:30px;
+      transition:0.3s;
+    }
+    .card:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,0.12)}
+    h2{margin-top:0;font-size:28px;color:#334}
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:15px}
+    .skill{
+      background:#eef2ff;padding:12px;text-align:center;border-radius:10px;
+      font-weight:600;color:#334
+    }
+    footer{text-align:center;padding:20px;color:#777;margin-top:40px}
+  </style>
+<style>
+  .header-social{position:absolute;top:20px;right:20px;display:flex;gap:15px;font-size:24px}
+  .header-social a{text-decoration:none;color:white}
+  .floating-social{position:fixed;top:50%;left:15px;display:flex;flex-direction:column;gap:12px;font-size:26px}
+  .floating-social a{text-decoration:none;color:#3b6bfa}
+  .dark{background:#121212;color:#eee}
+  .dark .card{background:#1d1d1d;box-shadow:none}
+  .dark a{color:#9bb8ff}
+  .dark header{background:#1a1a1a}
+  #darkToggle{position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#3b6bfa;color:white;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+</style>
+<style>
+html{scroll-behavior:smooth}
+#topBtn{position:fixed;bottom:80px;right:20px;padding:12px 18px;background:#3b6bfa;color:white;border-radius:50%;font-size:20px;border:none;cursor:pointer;display:none}
+.project-img{width:100%;border-radius:10px;margin-top:10px}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Sneha Kate</h1>
+    <p><span id="typeText"></span> • Web Developer</p>
+    <a href="#contact" class="btn-primary">Hire Me</a>
+    <div class="header-social">
+    <a href="https://www.linkedin.com/in/sneha-kate-32748724b" target="_blank">🔗</a>
+    <a href="https://github.com/" target="_blank">💻</a>
+  </div>
+</header>
+
+  <section class="section">
+
+    <div class="card">
+      <h2>SKILLS</h2>
+      <div class="skills-grid">
+        <div class="skill">Java</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">React.js</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">WordPress</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>EXPERIENCE</h2>
+
+      <h3>Junior Associate Software Developer — Datapulse Global Services</h3>
+      <p>June 2025 – Oct 2025</p>
+      <ul>
+        <li>Developed responsive web interfaces using HTML, CSS, JavaScript and WordPress.</li>
+        <li>Debugged and optimized website functionality improving performance.</li>
+        <li>Collaborated within Agile teams for module delivery and enhancement.</li>
+      </ul>
+
+      <h3>Java Full‑Stack Developer Intern — KodNest Technologies</h3>
+      <p>Feb 2025 – May 2025</p>
+      <ul>
+        <li>Built modules using Java, Spring Boot, REST APIs, Bootstrap, and JavaScript.</li>
+        <li>Integrated UI components and supported deployment activities.</li>
+        <li>Contributed to bug fixing, testing, and UI improvements.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>PROJECTS</h2>
+
+      <h3>5G Energy‑Efficient User Association System</h3>
+      <ul>
+        <li>Implemented energy‑optimized DRX mechanism improving device usage efficiency by 30%.</li>
+        <li>Simulated multi‑tier 5G environments using MATLAB/Ns‑3 with improved resource allocation.</li>
+      </ul>
+
+      <h3>STOP ADDICTION — Assessment Web Tool</h3>
+      <ul>
+        <li>Developed an interactive web‑based assessment system using HTML, CSS, JavaScript.</li>
+        <li>Generated dynamic suggestion outputs based on questionnaire scoring.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>CONTACT</h2>
+      <style>
+        .social-links a{
+          display:flex;
+          align-items:center;
+          gap:8px;
+          margin-bottom:8px;
+          text-decoration:none;
+          color:#3b6bfa;
+          font-weight:600;
+        }
+        .social-links svg{width:20px;height:20px;fill:#3b6bfa;}
+      </style>
+      <p><strong>Email:</strong> snehakate023@gmail.com</p>
+      <p><strong>Phone:</strong> +91 8779186008</p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sneha-kate-32748724b" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.9-2.2 4.2 0 5 2.8 5 6.3V24h-4v-8.3c0-2-.1-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4V8z"/></svg>
+          linkedin.com/in/sneha-kate-32748724b
+        </a>
+
+        <a href="https://github.com/" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.39-3.87-1.39-.53-1.33-1.3-1.68-1.3-1.68-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.72-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.2-3.1-.12-.29-.52-1.46.1-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C19 4.63 20 4.94 20 4.94c.62 1.59.22 2.76.1 3.05.75.8 1.2 1.84 1.2 3.1 0 4.43-2.69 5.4-5.25 5.68.41.36.77 1.1.77 2.22v3.29c0 .31.2.67.8.56A10.99 10.99 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+          github.com/
+        </a>
+      </div>
+
+      <p><a href="Sneha_Kate_Resume.pdf" class="btn-primary" download>Download Resume</a></p>
+    </div>
+
+  <div class="card">
+<h2>PROJECT GALLERY</h2>
+
+<div class="project-item">
+  <h3>🎵 Spotify Clone</h3>
+  
+  <p>A UI‑based Spotify music player clone built using HTML, CSS and JavaScript with responsive layout.</p>
+</div>
+
+<div class="project-item">
+  <h3>▶️ YouTube Clone</h3>
+  
+  <p>A functional YouTube landing page clone with thumbnails, grid layout and search UI built using modern frontend techniques.</p>
+</div>
+
+<div class="project-item">
+  <h3>🛒 E‑Commerce Frontend</h3>
+  
+  <p>Clean and responsive shopping UI with product cards, cart page and filters using HTML, CSS, JS.</p>
+</div>
+
+</div>
+</section>
+
+  <button id="darkToggle" onclick="toggleDark()">Toggle Dark Mode</button>
+<footer>
+    © 2025 Sneha Kate • Portfolio
+  </footer>
+  <div class="floating-social">
+    <a href="https://www.linkedin.com/in/sneha-kate-32748724b" target="_blank">🔗</a>
+    <a href="https://github.com/" target="_blank">💻</a>
+  </div>
+  <script>
+    function toggleDark(){document.body.classList.toggle('dark');}
+  </script>
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'});">↑</button>
+<script>
+const roles=["Java Full‑Stack Developer","Web Developer","Software Engineer","Frontend Developer"];let idx=0,ci=0,el=document.getElementById('typeText');function type(){if(ci<roles[idx].length){el.textContent+=roles[idx].charAt(ci);ci++;setTimeout(type,100);}else{setTimeout(erase,1500);}}function erase(){if(ci>0){el.textContent=roles[idx].substring(0,ci-1);ci--;setTimeout(erase,60);}else{idx=(idx+1)%roles.length;setTimeout(type,200);}}type();
+window.onscroll=function(){document.getElementById('topBtn').style.display=window.scrollY>300?'block':'none'}
+</script>
+</body>
+</html>
